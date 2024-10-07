@@ -1,3 +1,5 @@
+// Scroll
+import { Link } from 'react-scroll';
 const Header = () => {
   return (
     <header className='py-8'>
@@ -5,10 +7,17 @@ const Header = () => {
         <div className='flex justify-between items-center'>
           {/* logo */}
           <a href='#'>
-            <img src="logo.svg" alt='' />
+            <img className="h-40 w-40" src="loggi.png" alt='' />
           </a>
           {/* button */}
-          <button className='btn btn-sm transition-all duration-300 '>Work with me</button>
+          <Link
+            to='contact'
+            activeClass='active'
+            smooth={true}
+            spy={true}
+          >
+          <button className=' btn btn-sm'>Work with me</button>
+          </Link>
         </div>
       </div>
     </header>

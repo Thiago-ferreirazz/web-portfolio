@@ -3,7 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../../variants';
-// img
+
+import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
@@ -19,16 +20,16 @@ const Work = () => {
           >
             {/* text */}
             <div>
-              <h2 className='h2 leading-tight text-accent'>
+              <h2 className='h2 text-6xl leading-tight text-accent'>
                 My Latest <br />
                 Work.
               </h2>
               <p className='max-w-sm mb-16'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat, hic! Harum quis, cum velit neque esse eos molestias
-                doloremque explicabo!
+              This project aims to develop a website dedicated to Formula E, the world-class electric car racing category. 
               </p>
-              <button className='btn btn-sm'>View all projects</button>
+              <Link to={"/projects"}>
+              <button className='btn btn-sm scale-125'>View all projects</button>
+              </Link>
             </div>
             {/* image */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -37,16 +38,16 @@ const Work = () => {
               {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
-                src={"portfolio-img1.png"}
+                src={"E-Pit.png"}
                 alt=''
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>Front-End</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>E-Pit</span>
               </div>
             </div>
           </motion.div>
@@ -64,16 +65,16 @@ const Work = () => {
               {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
-                src={"portfolio-img2.png"}
+                src={"Pilots.png"}
                 alt=''
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>Front-End</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>E-Pit</span>
               </div>
             </div>
             {/* image */}
@@ -83,16 +84,16 @@ const Work = () => {
               {/* img */}
               <img
                 className='group-hover:scale-125 transition-all duration-500'
-                src={"portfolio-img3.png"}
+                src={"mahindra.png"}
                 alt=''
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>Front-End</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>E-Pit</span>
               </div>
             </div>
           </motion.div>

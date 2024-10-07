@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 // icons
 import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
 // type animation
@@ -25,7 +25,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'
             >
-              BEN <span>AIDEN</span>
+              THIAGO <span>FERREIRA</span>
             </motion.h1>
             <motion.div
               variants={fadeIn('up', 0.4)}
@@ -39,9 +39,9 @@ const Banner = () => {
                 sequence={[
                   'Developer',
                   2000,
-                  'Designer',
+                  'Writer',
                   2000,
-                  'Youtuber',
+                  'Student',
                   2000,
                 ]}
                 speed={50}
@@ -57,8 +57,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-              numquam. Harum deleniti id sapiente.
+              An enthusiast of art and technology, 
+              deeply passionate about cinema, cybersecurity, and game development.
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.6)}
@@ -67,9 +67,12 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
-                My Portfolio
+              <Link to={"/projects"}>
+              <button className='btn btn-lg'>My projects</button>
+              </Link>
+              
+              <a href='ferreira_thiago.pdf' className='text-gradient btn-link' download>
+                My CV
               </a>
             </motion.div>
             {/* socials */}
@@ -98,7 +101,7 @@ const Banner = () => {
             whileInView={'show'}
             className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'
           >
-            <img src={"avatar.svg"} alt='' />
+            <img src={"avatar.png"} alt='' />
           </motion.div>
         </div>
       </div>

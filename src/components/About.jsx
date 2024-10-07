@@ -7,7 +7,8 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../../variants';
-
+// Scroll
+import { Link } from 'react-scroll';
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
@@ -22,7 +23,7 @@ const About = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'
+            className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top shadow-inner-custom'
           ></motion.div>
           {/* text */}
           <motion.div
@@ -34,19 +35,16 @@ const About = () => {
           >
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>
-              I'm a Freelance Front-end Developer with over 5 years of
-              experience.
+            I'm a Software Engineer and a FIAP student
             </h3>
             <p className='mb-6'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-              natus omnis inventore quas beatae illo nulla. Officiis magni omnis
-              molestias.
+            I specialize in building efficient, scalable, and secure server-side solutions that drive web and mobile applications. My work ensures smooth database management, API integration, and server performance optimization. With a focus on problem-solving and innovation, I help bring complex projects to life, making sure they function flawlessly behind the scenes.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={5} duration={4} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Years of <br />
@@ -55,8 +53,8 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={15} duration={3} /> : null}
-                  k+
+                  {inView ? <CountUp start={0} end={15} duration={4} /> : null}
+                  +
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Projects <br />
@@ -65,8 +63,8 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={12} duration={3} /> : null}
-                  k+
+                  {inView ? <CountUp start={0} end={10} duration={4} /> : null}
+                  +
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Satisfied <br />
@@ -75,7 +73,15 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>Contact me</button>
+            <Link 
+            to='contact'
+            activeClass='active'
+            smooth={true}
+            spy={true}
+            >
+            <button className='btn btn-lg'>Contact me</button>
+          </Link>
+
               <a href='#' className='text-gradient btn-link'>
                 My Portfolio
               </a>

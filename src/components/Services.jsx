@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from 'react';
 // icon
 import { BsArrowUpRight } from 'react-icons/bs';
@@ -11,25 +12,25 @@ const services = [
   {
     name: 'UI/UX Design',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
+      'Expert in creating user-centered interfaces with a focus on usability and visual experience. Skilled in transforming business needs into functional and intuitive designs.',
     link: 'Learn more',
   },
   {
-    name: 'Development',
+    name: 'Software Engineering',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
+      'Skilled in developing robust software using Python, Java, C#, JavaScript, and TypeScript for both backend and frontend solutions.',
     link: 'Learn more',
   },
   {
-    name: 'Digital Marketing',
+    name: 'Frontend Development',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
+      'Expertise in building responsive, modern interfaces with React, Tailwind, and Bootstrap, focusing on performance and reusability.',
     link: 'Learn more',
   },
   {
-    name: 'Product Branding',
+    name: 'Agile Methodologies',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia quo expedita accusamus illum ducimus.',
+      'Experienced in Scrum and Kanban, emphasizing continuous value delivery and process improvement in software projects.',
     link: 'Learn more',
   },
 ];
@@ -38,21 +39,22 @@ const Services = () => {
   return (
     <section className='section' id='services'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row'>
+        <div className='flex flex-col lg:flex-row gap-9'>
           {/* text & image */}
           <motion.div
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'
+            className="flex-1 lg:bg-services" 
           >
-            <h2 className='h2 text-accent mb-6'>What I Do.</h2>
+            <h2 className='h2 text-6xl text-accent mb-7'>What I Do.</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              I'm a Freelance Front-end Developer with over 5 years of
-              experience.
+            I'm a Software Engineer and a FIAP student
             </h3>
-            <button className='btn btn-sm'>See my work</button>
+            <Link to={"/projects"}>
+            <button className='btn btn-sm scale-125 '>See my work</button>
+            </Link>
           </motion.div>
           {/* services */}
           <motion.div
