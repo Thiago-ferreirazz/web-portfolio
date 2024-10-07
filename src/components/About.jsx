@@ -1,19 +1,16 @@
-
-// countup
 import CountUp from 'react-countup';
-// intersection observer hook
 import { useInView } from 'react-intersection-observer';
-// motion
 import { motion } from 'framer-motion';
-// variant
 import { fadeIn } from '../../variants';
-// Scroll
 import { Link } from 'react-scroll';
-// img
+
+import Caveira from '../assets/cavera.jpg';
+
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
+  console.log(Caveira)
   return (
     <section className='section' id='about' ref={ref}>
       <div className='container mx-auto'>
@@ -24,7 +21,7 @@ const About = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            style={{ backgroundImage: "url('/src/assets/cavera.jpg')" }}
+            style={{ backgroundImage: Caveira }}
             className="flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top shadow-inner-custom"
           ></motion.div>
           {/* text */}
@@ -77,7 +74,7 @@ const About = () => {
             <div className='flex gap-x-8 items-center'>
             <Link 
             to='contact'
-            activeClass='active'
+            activeclass='active'
             smooth={true}
             spy={true}
             >

@@ -16,7 +16,7 @@ const Nav = () => {
         <div className='w-full bg-gray-900/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50'>
           <Link
             to='home'
-            activeClass='active'
+            activeclass='active'
             smooth={true}
             spy={true}
             offset={-200}
@@ -26,7 +26,7 @@ const Nav = () => {
           </Link>
           <Link
             to='about'
-            activeClass='active'
+            activeclass='active'
             smooth={true}
             spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:scale-150 hover:text-fuchsia-600 transition-all duration-500'
@@ -35,7 +35,7 @@ const Nav = () => {
           </Link>
           <Link
             to='services'
-            activeClass='active'
+            activeclass='active'
             smooth={true}
             spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:scale-150 hover:text-fuchsia-600 transition-all duration-500'
@@ -44,7 +44,7 @@ const Nav = () => {
           </Link>
           <Link
             to='work'
-            activeClass='active'
+            activeclass='active'
             smooth={true}
             spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:scale-150 hover:text-fuchsia-600 transition-all duration-500'
@@ -53,7 +53,7 @@ const Nav = () => {
           </Link>
           <Link
             to='contact'
-            activeClass='active'
+            activeclass='active'
             smooth={true}
             spy={true}
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:scale-150 hover:text-fuchsia-600 transition-all duration-500'

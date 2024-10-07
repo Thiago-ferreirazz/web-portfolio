@@ -57,7 +57,7 @@ const projectsData = [
   {
     id: 6,
     title: "Full-stack Roadmap",
-    description: "port5.png",
+    description: "Front and Back, all together",
     image: "port5.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
@@ -131,7 +131,7 @@ const ProjectsSection = () => {
       <div className='w-full bg-gray-900/20 h-[96px] backdrop-blur-2xl rounded-full max-w-24 mx-auto px-5 flex  items-center text-2xl text-white/50'>
         <Link  
             to='/'
-            activeClass='active'
+            activeclass='active'
             smooth={true}
             spy={true}
             offset={-200}

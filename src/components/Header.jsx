@@ -12,7 +12,7 @@ const Header = () => {
           {/* button */}
           <Link
             to='contact'
-            activeClass='active'
+            activeclass='active'
             smooth={true}
             spy={true}
           >
