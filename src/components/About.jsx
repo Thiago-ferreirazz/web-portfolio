@@ -9,6 +9,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 // Scroll
 import { Link } from 'react-scroll';
+// img
+import tailwindConfig from '../../tailwind.config';
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
