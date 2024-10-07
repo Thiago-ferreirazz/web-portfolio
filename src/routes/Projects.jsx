@@ -1,4 +1,3 @@
-"use client";
 import { Link } from "react-router-dom";
 import React, { useState, useRef } from "react";
 import ProjectCard from "../components/ProjectCard";

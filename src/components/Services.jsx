@@ -7,8 +7,6 @@ import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../../variants';
 
-import Batata from '../assets/batata.png'
-
 // services data
 const services = [
   {
@@ -48,7 +46,7 @@ const Services = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            style={{ backgroundImage: Batata }}
+            style={{ backgroundImage: "url('/batata.png')" }}
             className="flex-1" 
           >
             <h2 className='h2 text-6xl text-accent mb-7'>What I Do.</h2>

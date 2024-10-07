@@ -4,13 +4,10 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import { Link } from 'react-scroll';
 
-import Caveira from '../assets/cavera.jpg';
-
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
-  console.log(Caveira)
   return (
     <section className='section' id='about' ref={ref}>
       <div className='container mx-auto'>
@@ -21,7 +18,7 @@ const About = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            style={{ backgroundImage: Caveira }}
+            style={{ backgroundImage: "url('/cavera.jpg')" }}
             className="flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top shadow-inner-custom"
           ></motion.div>
           {/* text */}
