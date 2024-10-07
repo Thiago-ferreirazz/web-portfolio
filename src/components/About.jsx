@@ -10,7 +10,6 @@ import { fadeIn } from '../../variants';
 // Scroll
 import { Link } from 'react-scroll';
 // img
-import tailwindConfig from '../../tailwind.config';
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
@@ -25,7 +24,8 @@ const About = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top shadow-inner-custom'
+            style={{ backgroundImage: "url('/src/assets/cavera.jpg')" }}
+            className="flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top shadow-inner-custom"
           ></motion.div>
           {/* text */}
           <motion.div

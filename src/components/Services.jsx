@@ -46,7 +46,8 @@ const Services = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services" 
+            style={{ backgroundImage: "url('/src/assets/batata.png')" }}
+            className="flex-1" 
           >
             <h2 className='h2 text-6xl text-accent mb-7'>What I Do.</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
